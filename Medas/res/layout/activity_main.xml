@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Tesisat Numaranızı Giriniz."
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:scrollbars = "vertical"
+         />
+
+    <EditText
+        android:id="@+id/tesisat_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/kontrol_resim"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tesisat_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_launcher"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kontrol_resim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Üstteki resmi giriniz."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/kontrol.yaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/sorgu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kontrol.yaz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Sorgula" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sorgu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="TextView" />
+
+</RelativeLayout>
